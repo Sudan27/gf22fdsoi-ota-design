@@ -25,3 +25,23 @@ The OTA open-loop frequency response was simulated using Cadence Virtuoso and Sp
 - `figures/open_loop_gain.png` — Open-loop gain magnitude.
 - `figures/open_loop_phase.png` — Open-loop phase response.
 
+## DC Operating Point
+
+The following table summarizes the simulated DC operating-point parameters of the six OTA transistors.
+
+| Transistor | Width (µm) | Length (nm) | \|ID\| (µA) | \|VGS\| (mV) | \|VDS\| (mV) |
+|---|---:|---:|---:|---:|---:|
+| M1 | 110 | 160 | 3.419 | 292.1 | 218.6 |
+| M2 | 110 | 160 | 3.399 | 291.2 | 291.2 |
+| M3 | 7.8 | 320 | 3.419 | 373.4 | 373.4 |
+| M4 | 7.8 | 320 | 3.400 | 373.4 | 300.8 |
+| M5 | 0.78 | 320 | 6.819 | 568.4 | 568.3 |
+| M6 | 0.50 | 320 | 5.000 | 568.4 | 207.8 |
+
+### Static DC Power
+
+Using the supply-current expression from the design calculation:
+
+Static power: P_DC = V_DD × (I_5 + I_6)
+
+With V_DD = 0.8 V, I_5 = 6.819 µA, and I_6 = 5 µA, the calculated value is 9.4552 µW.
