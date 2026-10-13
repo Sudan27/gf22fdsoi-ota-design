@@ -29,14 +29,14 @@ The OTA open-loop frequency response was simulated using Cadence Virtuoso and Sp
 
 The following table summarizes the simulated DC operating-point parameters of the six OTA transistors.
 
-| Transistor | Width (µm) | Length (nm) | \|ID\| (µA) | \|VGS\| (mV) | \|VDS\| (mV) |
-|---|---:|---:|---:|---:|---:|
-| M1 | 110 | 160 | 3.419 | 292.1 | 218.6 |
-| M2 | 110 | 160 | 3.399 | 291.2 | 291.2 |
-| M3 | 7.8 | 320 | 3.419 | 373.4 | 373.4 |
-| M4 | 7.8 | 320 | 3.400 | 373.4 | 300.8 |
-| M5 | 0.78 | 320 | 6.819 | 568.4 | 568.3 |
-| M6 | 0.50 | 320 | 5.000 | 568.4 | 207.8 |
+| Transistor | Width (µm) | Length (nm) | \|ID\| (µA) | \|VGS\| (mV) | \|VDS\| (mV) | Region of operation |
+|---|---:|---:|---:|---:|---:|---:|
+| M1 | 110 | 160 | 3.419 | 292.1 | 218.6 |weak-inversion|
+| M2 | 110 | 160 | 3.399 | 291.2 | 291.2 |weak-inversion|
+| M3 | 7.8 | 320 | 3.419 | 373.4 | 373.4 |weak-inversion|
+| M4 | 7.8 | 320 | 3.400 | 373.4 | 300.8 |weak-inversion|
+| M5 | 0.78 | 320 | 6.819 | 568.4 | 568.3 |saturation|
+| M6 | 0.50 | 320 | 5.000 | 568.4 | 207.8 |saturation|
 
 ### Static DC Power
 
