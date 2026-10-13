@@ -45,3 +45,26 @@ Using the supply-current expression from the design calculation:
 Static power: P_DC = V_DD × (I_5 + I_6)
 
 With V_DD = 0.8 V, I_5 = 6.819 µA, and I_6 = 5 µA, the calculated value is 9.4552 µW.
+
+
+
+## Closed-Loop AC Analysis
+
+The OTA was configured as a unity-feedback voltage follower and simulated using AC analysis in Cadence Virtuoso.
+
+### Measured Results
+
+| Parameter | Simulated result |
+|---|---:|
+| Closed-loop DC gain, \(A_{f,0}\) | 0.988211 V/V |
+| Closed-loop DC gain | Approximately -0.103 dB |
+| Closed-loop -3 dB bandwidth, \(f_{p,f}\) | 55.63 MHz |
+
+### Observations
+
+- The low-frequency closed-loop gain is close to unity, consistent with voltage-follower operation.
+- The measured -3 dB bandwidth is 55.63 MHz.
+
+### Figure
+
+- `figures/closed_loop_gain.png` — Closed-loop AC gain magnitude.
