@@ -63,8 +63,31 @@ The OTA was configured as a unity-feedback voltage follower and simulated using 
 ### Observations
 
 - The low-frequency closed-loop gain is close to unity, consistent with voltage-follower operation.
-- The measured -3 dB bandwidth is 55.63 MHz.
 
 ### Figure
 
 - `figures/closed_loop_gain.png` — Closed-loop AC gain magnitude.
+
+
+## Closed-Loop Transient Analysis
+
+The OTA was configured as a unity-feedback voltage follower and simulated using transient analysis in Cadence Virtuoso. A +1 mV input step was applied to evaluate the time-domain response and steady-state accuracy.
+
+### Simulation Results
+
+| Parameter | Result |
+|---|---:|
+| Input step amplitude | +1 mV |
+| Final input voltage | 301 mV |
+| Final output voltage | 301.8 mV |
+| Relative DC steady-state settling error | 0.1091 |
+
+### Observations
+
+- Input step: (+1,\text{mV})
+- Relative DC steady-state settling error: 0.1091
+- Transient response: The output exhibits a small overshoot following the input step and subsequently settles to a steady-state value.
+
+### Figure
+
+- `figures/closed_loop_transient.png` — Simulated closed-loop transient response to the input step.
